@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="images/iium1.ico">
+    <title>IIUM LEGAL CLINIC - CONTACT</title>
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,800,500,600,300,700' rel='stylesheet' type='text/css'>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Styles  CSS-->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+  <div id="id01" class="modal">
+
+  <form class="modal-content animate" action="/action_page.php">
+  <div class="imgcontainer">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <img src="images/img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+  <label for="uname"><b>Username</b></label>
+  <input type="text" placeholder="Enter Username" name="uname" required>
+
+  <label for="psw"><b>Password</b></label>
+  <input type="password" placeholder="Enter Password" name="psw" required>
+
+  <button type="submit">Login</button>
+  <label>
+  <input type="checkbox" checked="checked" name="remember"> Remember me
+  </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+  <span class="psw">Forgot Password ? <a href="#"></a></span>
+  </div>
+  </form>
+  </div>
+    <a href="index.html">Home</a>
+    <a href="expertise.html">List of Expertise</a>
+    <a href="#navmap">Map</a>
+    <a href="#navform">Appointment Form</a>
+    <!--<a href="#gallery"></a>-->
+  </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="header-table col-md-12">
+            <div class="brand">
+              <a href="#">
+                <img src="images/logo.png" alt="IIUM">
+              </a>
+            </div>
+              <nav id="nav-wrap" class="main-nav">
+                <div id="mobnav-btn"> </div>
+                <ul class="sf-menu">
+                  <li>
+                    <a href="index.html">Home </a>
+                    <div class="mobnav-subarrow"><i class="fa fa-caret-down"></i></div>
+                  </li>
+
+                <li class="menu-search-bar">
+                  <a id="search-label"><i class="fa fa-search"></i></a>
+                  <form class="search-bar" id="searchform">
+                    <input type="text"  placeholder="Search" name="s">
+                  </form>
+                </li>
+                <li>
+                  <a class="navbtn1" style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; </a>
+                </li>
+
+              </ul>
+
+
+
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+    <div id="navmap"class="pages-header-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="pages-header">
+                        <h3 class="title-un"><a href="contact-us.html">Appointment</a></h3>
+                        <ul class="breadcrumbs">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="navform" class="container-contact-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div id="contact-form">
+						<form action="insert_form.php" method="post">
+						<div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" name="name" id="name" required placeholder="Name (required)">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" name="icno" id="icno" required placeholder="IC/Passport No (required)">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" name="permaddr" id="permaddr" required placeholder="Permanent Address (required)">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" name="corraddr" id="corraddr" required placeholder="Correspondence Address ">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" name="hpno" id="hpno" required placeholder="Tel No(H/P) (required)">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" name="email" id="email" required placeholder="Your email ">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" name="spaddr" id="spaddr" required placeholder="Name/Spouse Address (required)">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" name="status" id="status" required placeholder="Complaint Status/Case: ">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" name="lawyer" id="lawyer" required placeholder="Name/Lawyer Address(If any):">
+                                </div>
+                            </div>
+                            <textarea name="complaint" id="complaint" required placeholder="Complaint :"></textarea>
+  <input type="submit" value="Submit">
+</form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="height5"></div>
+                    <h4><i class="fa fa-home"></i>  IIUM LEGAL CLINIC</h4>
+                    <p>IIUM Legal Clinic<br>
+                      Ahmad Ibrahim Kuliyyah of Laws,
+                      International Islamic University Malaysia,
+                      P.O.BOX 10, 50728 Kuala Lumpur,
+                      Malaysia</p>
+                    <div class="height5"></div>
+                    <h4><i class="fa fa-slideshare"></i> Contact Us</h4>
+                    <p>TEL: 03-61964390
+                        <br> EMAIL: legalcliniciium@gmail.com</a></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="map-container">
+        <div id="test" class="gmap3"></div>
+    </div>
+    <div class="footer-area-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="footer-widget">
+
+
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="footer-widget">
+              <img class="fotter-logo" src="images/logo.png" alt="">
+
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="footer-widget">
+              <p><br>IIUM Legal Clinic<br>
+                Ahmad Ibrahim Kuliyyah of Laws,
+                International Islamic University Malaysia,
+                P.O.BOX 10, 50728 Kuala Lumpur,
+                Malaysia</p>
+              <p>Email: legalcliniciium@gmail.com</a> <br>
+              Tel: 03-61964390</p>
+            </div>
+          </div>
+
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    <div class="footer-holder">
+        <div class="container">
+            <footer class="site-footer">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>© Copyright KICT, IIUM</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
+    <script src="js/jflickrfeed.min.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+    <script src="js/gmap3.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/jquery.fractionslider.min.js"></script>
+    <script src="js/contact-form-plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#test').gmap3({
+                map: {
+                    options: {
+                        maxZoom: 15
+                    }
+                },
+                marker: {
+                    latLng: [3.25166566, 101.73583039],
+                    options: {
+                        icon: new google.maps.MarkerImage(
+                            "images/marker-icon.png",
+                            new google.maps.Size(48, 48, "px", "px")
+                        )
+                    }
+                }
+            },
+            "autofit");
+    });
+    </script>
+    <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+
+
+<!-- Mirrored from www.energeticthemes.com/templates/grand/contact-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Oct 2018 12:55:20 GMT -->
+</html>
